@@ -174,9 +174,9 @@ export const getSearchResult: QueryFunction<
 };
 ```
 
-## infinity Scroll
+## Infinity Scroll
 
-가져와야 할 정보가 많아 fetch해오는 속도가 느릴 때 사용자 경험을 향상시키기 위해 정보를 끊어서 가져와 scroll 이벤트 등을 통해 정보의 일부를 가져와 클라이언트에 보여주는 방법입니다.
+가져와야 할 정보가 많아 fetch해오는 속도가 느릴 때 사용자 경험을 향상시키기 위해 사용됩니다. 사용자가 페이지를 스크롤할 때 동적으로 정보의 일부를 끊어서를 가져옵니다.
 
 ### 트리거
 
