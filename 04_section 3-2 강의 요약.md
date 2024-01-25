@@ -110,7 +110,7 @@ export default async function Home() {
   - staleTime < gcTime
 - initialData : 패칭 전 초기 데이터
 
-## Actions - DevTools
+## React Query DevTools의 Actions
 
 - refetch : 무조건 새로 데이터를 가져온다.
 - invalidate : 페이지를 보고 있지 않을 때 데이터를 요청하면 바로 수행하지 않고 페이지로 돌아가야 fetch를 수행한다.
@@ -176,7 +176,7 @@ export const getSearchResult: QueryFunction<
 
 ## Infinity Scroll
 
-가져와야 할 정보가 많아 fetch해오는 속도가 느릴 때 사용자 경험을 향상시키기 위해 사용됩니다. 사용자가 페이지를 스크롤할 때 동적으로 정보의 일부를 끊어서를 가져옵니다.
+가져와야 할 정보가 많아 fetch해오는 속도가 느릴 때 사용자 경험을 향상시키기 위해 사용됩니다. 사용자가 페이지를 스크롤할 때 동적으로 정보의 일부를 가져옵니다.
 
 ### 트리거
 
@@ -279,7 +279,7 @@ export default function PostRecommends() {
 fragment에 prop을 넣어주고 싶을 때는 `<Fragment key={_}>`를 사용하면 된다.
 ```
 
-# next에서 에러와 로딩 다루기
+# Next.js에서 에러와 로딩 다루기
 
 `loading.tsx`->`page.tsx`의 과정을 거치고 중간에 에러가 발생하면 `error.tsx`를 보여줍니다.
 리액트의 suspense와 errorBoundary를 활용한 개념입니다.
@@ -288,7 +288,7 @@ fragment에 prop을 넣어주고 싶을 때는 `<Fragment key={_}>`를 사용하
 
 ![image](https://nextjs.org/_next/image?url=%2Fdocs%2Flight%2Floading-overview.png&w=3840&q=75&dpl=dpl_y7QdznKAQ3dHs2QTSh3XNu44H11u)
 
-### Suspense Componenet를 활성화시키는 상황
+### Suspense Component를 활성화시키는 상황
 
 1. 서버에서 데이터 패치해올 떄, 서버 컴포넌트를 가져올 때
 2. Lazy Loading을 하는 경우(ex. code spliting)
